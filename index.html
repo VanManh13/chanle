@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>nhập số</h3>
+    <input id="SoNhap" type="number" />
+    <button
+      type="button"
+      onclick="kiemTraSoChan()
+    "
+    >
+      kiểm tra
+    </button>
+    <script>
+      function kiemTraSoChan() {
+        let soBanNhap = parseInt(document.getElementById("SoNhap"));
+        if (soBanNhap % 2 == 0) {
+          alert("số bạn nhập là số chẵn");
+        } else {
+          alert("số bạn nhập là số lẻ");
+        }
+      }
+    </script>
+  </body>
+</html>
